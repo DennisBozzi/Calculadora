@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    
+    <link rel="icon" type="image/x-icon" href="img/calculator.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.0.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+    <section class="section-calculadora">
+
+        <input class="display" type="text" disabled>
+        <hr>
+
+        <section class="teclado">
+            <div>
+                <button class="limpar" onclick="limpar()">C</button>
+                <button onclick="dividir()">÷</button>
+            </div>
+
+            <div>
+                <button onclick="inserir(7)">7</button>
+                <button onclick="inserir(8)">8</button>
+                <button onclick="inserir(9)">9</button>
+                <button onclick="multiplicar()">x</button>
+            </div>
+
+            <div>
+                <button onclick="inserir(4)">4</button>
+                <button onclick="inserir(5)">5</button>
+                <button onclick="inserir(6)">6</button>
+                <button onclick="subtrair()">-</button>
+            </div>
+
+            <div>
+                <button onclick="inserir(1)">1</button>
+                <button onclick="inserir(2)">2</button>
+                <button onclick="inserir(3)">3</button>
+                <button onclick="somar()">+</button>
+            </div>
+
+            <div>
+                <button class="zero" onclick="inserir(0)">0</button>
+                <button class="igual" onclick="igual()">=</button>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
